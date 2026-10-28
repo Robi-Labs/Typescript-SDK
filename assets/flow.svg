@@ -17,7 +17,7 @@
   </g>
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" text-anchor="middle">
     <text x="105" y="116" font-size="16" font-weight="600" fill="#ffffff">Your app</text>
-    <text x="365" y="106" font-size="16" font-weight="600" fill="#ffffff">@robiai/sdk</text>
+    <text x="365" y="106" font-size="16" font-weight="600" fill="#ffffff">robiai</text>
     <text x="365" y="128" font-size="12" fill="#8a8a99">retries, streaming, typed errors</text>
     <text x="630" y="106" font-size="16" font-weight="600" fill="#ffffff">Robi API</text>
     <text x="630" y="128" font-size="12" fill="#8a8a99">api.robiai.com/v1</text>

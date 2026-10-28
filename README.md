@@ -26,7 +26,7 @@ The official TypeScript / JavaScript SDK for the [Robi API](https://console.robi
 ## Install
 
 ```bash
-npm install @robiai/sdk
+npm install robiai
 ```
 
 ## Quick start
@@ -38,7 +38,7 @@ export ROBI_API_KEY=sk-...
 ```
 
 ```ts
-import Robi from "@robiai/sdk";
+import Robi from "robiai";
 
 const robi = new Robi(); // reads ROBI_API_KEY
 
@@ -203,7 +203,7 @@ Clips are kept for 24 hours after completion; after that `downloadContent` retur
 All errors extend `RobiError`. API errors extend `APIError` and carry `status`, `code`, `type` and `requestId`.
 
 ```ts
-import { RateLimitError, PaymentRequiredError } from "@robiai/sdk";
+import { RateLimitError, PaymentRequiredError } from "robiai";
 
 try {
   await robi.chat.completions.create({ model: "lime", messages });
