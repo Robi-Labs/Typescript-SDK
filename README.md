@@ -1,11 +1,12 @@
 <img src="assets/banner.svg" alt="Robi SDK for TypeScript" width="100%">
 
+[![npm](https://img.shields.io/npm/v/robiai?style=flat&color=555)](https://www.npmjs.com/package/robiai)
 ![Node](https://img.shields.io/badge/node-%E2%89%A518-555?style=flat)
 ![Types](https://img.shields.io/badge/types-included-555?style=flat)
 ![Dependencies](https://img.shields.io/badge/dependencies-0-555?style=flat)
 ![API](https://img.shields.io/badge/API-OpenAI--compatible-555?style=flat)
 
-The official TypeScript / JavaScript SDK for the [Robi API](https://console.robiai.com/docs).
+The official TypeScript / JavaScript SDK for the [Robi API](https://console.robiai.com/docs). Published on [npm](https://www.npmjs.com/package/robiai) as `robiai`.
 
 [Install](#install) · [Quick start](#quick-start) · [Chat](#chat) · [Images](#images) · [Video](#video) · [Errors](#errors) · [Options](#options)
 
@@ -27,6 +28,7 @@ The official TypeScript / JavaScript SDK for the [Robi API](https://console.robi
 
 ```bash
 npm install robiai
+# or: pnpm add robiai / yarn add robiai / bun add robiai
 ```
 
 ## Quick start
