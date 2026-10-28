@@ -70,12 +70,12 @@ test("images: generate json, edit multipart", async () => {
 });
 
 test("videos: createAndPoll completes; failure throws", async () => {
-  const vid = (status: string, error: unknown = null) => json({ id: "video_1", object: "video", model: "reel", status, progress: 0, created_at: 0, completed_at: null, expires_at: null, seconds: "8", size: "1280x720", error });
+  const vid = (status: string, error: unknown = null) => json({ id: "video_1", object: "video", model: "movi", status, progress: 0, created_at: 0, completed_at: null, expires_at: null, seconds: "8", size: "1280x720", error });
   const seq = [vid("queued"), vid("in_progress"), vid("completed")];
   const robi = new Robi({ apiKey: "k", fetch: (async () => seq.shift()!) as typeof fetch });
-  assert.equal((await robi.videos.createAndPoll({ model: "reel", prompt: "p" }, { interval: 1 })).status, "completed");
+  assert.equal((await robi.videos.createAndPoll({ model: "movi", prompt: "p" }, { interval: 1 })).status, "completed");
 
   const seq2 = [vid("queued"), vid("failed", { code: "audio_filtered", message: "x" })];
   const bad = new Robi({ apiKey: "k", fetch: (async () => seq2.shift()!) as typeof fetch });
-  await assert.rejects(bad.videos.createAndPoll({ model: "reel", prompt: "p" }, { interval: 1 }), VideoFailedError);
+  await assert.rejects(bad.videos.createAndPoll({ model: "movi", prompt: "p" }, { interval: 1 }), VideoFailedError);
 });
