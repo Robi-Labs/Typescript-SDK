@@ -21,7 +21,7 @@ The official TypeScript / JavaScript SDK for the [Robi API](https://console.robi
 | **Zero dependencies** | Built on `fetch`. Runs on Node 18+, browsers, edge runtimes and React Native. |
 | **Sensible retries** | Exponential backoff on `429` and `5xx`, honoring `Retry-After`. Never retries `4xx` that won't change. |
 
-<img src="assets/flow.svg" alt="Your app calls the SDK, which calls the Robi API for chat, images and video" width="720">
+<img src="assets/flow.svg" alt="Your app calls the SDK, which calls the Robi API for chat, images and video" width="100%">
 
 ## Install
 
